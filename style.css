@@ -19,8 +19,65 @@ body {
     margin-top: -10px;
 }
 
+.nav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.nav-link {
+    cursor: pointer;
+    margin-left: 3rem;
+}
+
+#search {
+    margin-left: 3rem;
+    border: none;
+    padding: .5rem;
+    outline: none;
+    width: 30vw;
+    display: inline;
+}
+
+.form {
+    position: relative;
+}
+#results {
+    position: absolute;
+    margin-top: .1rem;
+    margin-left: .5rem;
+}
+
+
+#results ul {
+    list-style-type: none;
+}
+
+#results ul li {
+    color: black;
+    background-color: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+    transition: all ease-in .5s;
+}
+
+#results ul li:hover {
+    background-color: #a8b0bc;
+}
+
+.disabled {
+    cursor: not-allowed !important;
+}
+
 .stats-container {
     display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.stats-container:hover{
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
